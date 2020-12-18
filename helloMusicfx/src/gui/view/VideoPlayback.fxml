@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="gui.controller.VideoPlaybackController"
+            prefHeight="400.0" prefWidth="600.0">
+    <bottom>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button fx:id="playPauseButton" onAction="#playPauseButtonPressed" prefHeight="25.0" prefWidth="60.0" text="Play"/>
+
+            </items>
+        </ToolBar>
+    </bottom>
+    <center>
+        <MediaView fx:id="mediaView" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
